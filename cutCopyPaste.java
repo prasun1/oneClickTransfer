@@ -161,7 +161,7 @@ public class cutCopyPaste extends JFrame implements ActionListener {
         for (File path : paths) {
 
             // prints file and directory paths
-            if (fsv.getSystemTypeDescription(path).equals("Removable Disk")) {
+            if (fsv.getSystemTypeDescription(path).equals("USB Drive")) {
                 p = path.toString();
                 dir = new File(p);
                 name = fsv.getSystemDisplayName(dir);
